@@ -1,6 +1,8 @@
 {
   "extends": "tsconfig/react-library.json",
   "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "paths": {
       "@ui/*": ["./src/*"]
     }
