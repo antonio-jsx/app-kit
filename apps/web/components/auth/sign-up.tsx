@@ -13,7 +13,8 @@ export function SignUp() {
     control,
     handleSubmit,
     setError,
-    formState: { isSubmitting, errors },
+    reset,
+    formState: { isSubmitSuccessful, isSubmitting, errors },
   } = useForm({
     resolver: zodResolver(registerSchema),
     defaultValues: { email: "", password: "", fullName: "", passwordRepeat: "" },
@@ -31,6 +32,7 @@ export function SignUp() {
       setError("root", { type: "server", message: error.message });
       return;
     }
+    reset();
   });
 
   return (
@@ -64,6 +66,7 @@ export function SignUp() {
       />
 
       {errors.root && <p className="text-red-500 text-sm">{errors.root.message}</p>}
+      {isSubmitSuccessful && <p className="text-green-800">Usuario creado con éxito</p>}
 
       <Button disabled={isSubmitting} type="submit">
         Crear cuenta
