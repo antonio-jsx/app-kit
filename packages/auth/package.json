@@ -1,0 +1,23 @@
+{
+  "name": "auth",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./src/auth.ts",
+    "./client": "./src/auth-client.ts",
+    "./route": "./src/route.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "database": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "better-auth": "^1.6.26"
+  }
+}
