@@ -3,6 +3,14 @@
   "extends": "//",
   "linter": {
     "enabled": true,
+    "rules": {
+      "a11y": {
+        "noLabelWithoutControl": "warn"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "warn"
+      }
+    },
     "domains": {
       "react": "recommended"
     }
