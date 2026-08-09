@@ -3,8 +3,8 @@ import { SignUp } from "@/components/auth/sign-up";
 
 export default function Registro() {
   return (
-    <section className="md:max-w-xs w-full">
-      <h1 className="mb-4 text-2xl font-bold">Crea tu cuenta</h1>
+    <section className="w-full md:max-w-xs">
+      <h1 className="mb-4 font-bold text-2xl">Crea tu cuenta</h1>
 
       <SignUp />
 

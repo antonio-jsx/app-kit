@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <section className="w-full md:max-w-xs">
       <p>Bienvenido de nuevo</p>
-      <h1 className="mb-4 text-2xl font-bold">Accede a tu cuenta</h1>
+      <h1 className="mb-4 font-bold text-2xl">Accede a tu cuenta</h1>
 
       <SignIn />
 

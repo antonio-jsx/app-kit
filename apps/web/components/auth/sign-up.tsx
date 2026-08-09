@@ -63,7 +63,7 @@ export function SignUp() {
         render={(field) => <Input placeholder="••••••••" type="password" {...field} />}
       />
 
-      {errors.root && <p className="text-sm text-red-500">{errors.root.message}</p>}
+      {errors.root && <p className="text-red-500 text-sm">{errors.root.message}</p>}
 
       <Button disabled={isSubmitting} type="submit">
         Crear cuenta
